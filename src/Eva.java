@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 
 /**
  * Created by daria_bobrova on 10/4/14.
@@ -13,6 +12,10 @@ public class Eva {
        g2.setColor(Color.BLACK);
        g2.fillArc(800,290,150,120,0,180);
        g2.fillOval(800,330,150,40);
+
+       paintComponent(g2, 90);
+       draw1(g2);
+
    }
        public void paintComponent(Graphics2D g2,int degrees) {
            g2.setPaint(Color.white);

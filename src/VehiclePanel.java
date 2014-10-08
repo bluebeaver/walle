@@ -15,14 +15,16 @@ public class VehiclePanel extends JPanel {
         Graphics2D g2 = (Graphics2D) g;
         Background one = new Background();
         one.drawBackground(g2);
+
         for(int i =0; i < 100; i++) {
             Star starry = new Star(g2,(int)(Math.random() * 1200), (int) (Math.random() * 750), (int)( Math.random() * 1200),
             (int) (Math.random() * 750));
             starry.drawwhite(g2);
             starry.drawyellow(g2);
         }
-            Moon moony = new Moon();
-            moony.drawMoon(g2);
+
+        Moon moony = new Moon();
+        moony.drawMoon(g2);
 //        LightPost lightposty=new LightPost();
 //        lightposty.draw(g2);
 
@@ -44,27 +46,17 @@ public class VehiclePanel extends JPanel {
 
          Fence fencey = new Fence();
          fencey.draw(g2);
+
         Shadow shadowey=new Shadow();
         shadowey.draw(g2);
         shadowey.paintComponent(g2);
-         Eva evaa = new Eva();
-         evaa.draw(g2);
-         evaa.paintComponent(g2, 90);
-        evaa.draw1(g2);
+
+        Eva evaa = new Eva();
+        evaa.draw(g2);
 
 
          Walle wallee = new Walle(g2);
-         wallee.mainsquare();
-         wallee.drawtopside();
-         wallee.drawleftside();
-         wallee.drawwheel();
-         wallee.design();
-         wallee.arm();
-         wallee.eyes();
-
-
-
-
+         wallee.draw();
 
         Shoe shoey=new Shoe();
         shoey.draw(g2);
